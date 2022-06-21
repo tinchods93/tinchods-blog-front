@@ -1,0 +1,34 @@
+.recommended__wrapper {
+  transition: 0.2s;
+  background: var(--background__color2);
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.posts__grid {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  background: brown;
+  overflow: hidden;
+  gap: 20px;
+}
+
+.posts__grid a:nth-child(n + 3) {
+  display: none;
+}
+
+.posts__grid a:nth-of-type(2n + 1) {
+  clear: none;
+}
+
+@media screen and (min-width: 768px) {
+  .posts__grid a:nth-child(n + 3) {
+    display: block !important;
+  }
+
+  .posts__grid {
+    gap: 20px;
+  }
+}

@@ -1,26 +1,87 @@
+:root {
+  --background__color1: #fffef5;
+  --background__color2: #f4f4f4;
+  --thumbnail__color1: #e46969;
+  --base__text__color: #000000;
+  --base__text__color__hl: rgb(175, 175, 175);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Archivo', sans-serif;
+h1 {
+  font-size: 26px;
+  font-weight: 600;
 }
 
-#root {
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.__upper{
+  text-transform: uppercase;
+}
+
+span {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+body,.App {
+  font-family: 'Archivo', sans-serif;
+  background-color: var(--background__color1);
+  min-width: 360px;
+  font-size: 16px;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+.App{
   display: flex;
+  flex-direction: column;  
+}
+.flex__container__centered{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.App{
+
+.wrapper {
+  transition: 0.2s;
   width: 100%;
+  max-width: 1050px;
+  padding: 0 10px;
+  margin: 0 auto 0;
 }
 
+a{
+  text-decoration: none;
+  color: var(--base__text__color);
+}
 
+a:hover{
+  color: var(--base__text__color__hl);
+}
 
-@media (min-width: 724px) {
+img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media screen and (min-width: 768px) {
   .App{
-    max-width: 1030px;
+    padding-inline: 20%;
   }
 }

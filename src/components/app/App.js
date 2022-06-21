@@ -1,21 +1,15 @@
 import React from 'react';
-import NavBar from '../NavBar/Navbar';
-import Topbar from '../Topbar/Topbar';
+import Footer from '../Footer/Footer';
+import Header from '../Header/Header';
+import MainComponent from '../Main/Main';
 import './main.css';
 
 function App() {
   return (
     <div className='App'>
-      <header>
-        <Topbar />
-        <NavBar />
-      </header>
-      <main>
-        main body
-      </main>
-      <footer>
-        footer
-      </footer>
+      {/* <Header/> */}
+      <MainComponent/>
+      <Footer/>
     </div>
   );
 }

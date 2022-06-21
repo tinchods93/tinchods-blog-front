@@ -1,0 +1,38 @@
+.aboutme__floater__container {
+  width: 350px;
+}
+.header {
+  width: 100%;
+}
+.top {
+  flex-grow: 1;
+}
+.top p {
+  overflow-wrap: break-word;
+}
+
+.text__container {
+  width: 250px;
+}
+
+.profile__img__container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: right;
+  margin-top: -20px;
+  margin-left: 5px;
+}
+.profile__img__container img {
+  object-fit: fill;
+}
+
+.bot {
+  width: 100%;
+  height: fit-content;
+}
+
+.bot a {
+  font-weight: 600;
+}
