@@ -1,11 +1,12 @@
-import NavBar from '../NavBar/Navbar';
-import Topbar from '../Topbar/Topbar';
+import { useContext } from 'react';
+import NavbarDesktop from '../Navbar/Desktop/NavbarDesktop';
+import NavbarMobile from '../Navbar/Mobile/NavbarMobile';
 
-const Header = () => {
+const Header = (props) => {
+  const size = useContext(props.context);
   return (
     <header>
-      <Topbar />
-      <NavBar />
+      {size && size.width > 767 ? <NavbarDesktop /> : <NavbarMobile />}
     </header>
   );
 };

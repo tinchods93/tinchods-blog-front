@@ -1,8 +1,8 @@
-import ArticleLink from '../ArticleLink/ArticleLink';
+import ArticleMinified from '../ArticleMinified/ArticleMinified.component';
 import styles from './RecommendedPosts.module.css';
 
 const RecommendedPosts = () => {
-  const articles = [<ArticleLink />, <ArticleLink />, <ArticleLink />];
+  const articles = [<ArticleMinified />, <ArticleMinified />, <ArticleMinified />];
   return (
     <section className='wrapper'>
       <div className={styles.recommended__wrapper}>

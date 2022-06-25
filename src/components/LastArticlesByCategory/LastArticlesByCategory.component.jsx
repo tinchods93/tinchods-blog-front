@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import ArticleThumbnail from '../ArticleThumbnail/ArticleThumbnail';
-import styles from './LastThumbnailList.module.css';
+import ArticleThumbnail from '../ArticleThumbnail/ArticleThumbnail.component';
+import styles from './LastArticlesByCategory.module.css';
 
-const LastThumbnailList = () => {
+const LastArticlesByCategory = () => {
   const articles = [
     <ArticleThumbnail />,
     <ArticleThumbnail />,
@@ -39,4 +39,4 @@ const LastThumbnailList = () => {
     </section>
   );
 };
-export default LastThumbnailList;
+export default LastArticlesByCategory;

@@ -1,12 +1,12 @@
-import ArticleLink from '../ArticleLink/ArticleLink';
+import ArticlePreview from '../ArticlePreview/ArticlePreview.component';
 import styles from './LastPosts.module.css';
 
 const LastPosts = () => {
   const articles = [
-    <ArticleLink />,
-    <ArticleLink />,
-    <ArticleLink />,
-    <ArticleLink />,
+    <ArticlePreview />,
+    <ArticlePreview />,
+    <ArticlePreview />,
+    <ArticlePreview />,
   ];
   return (
     <section className='wrapper'>
